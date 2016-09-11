@@ -16,6 +16,8 @@
 		4860A6531D81CD0B00B60113 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4860A6511D81CD0B00B60113 /* LaunchScreen.storyboard */; };
 		4860A65E1D81CD0B00B60113 /* SortArrayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860A65D1D81CD0B00B60113 /* SortArrayTests.m */; };
 		4860A6691D81CD0B00B60113 /* SortArrayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860A6681D81CD0B00B60113 /* SortArrayUITests.m */; };
+		4860A67B1D8555AE00B60113 /* NSArray+SortMethod.m in Sources */ = {isa = PBXBuildFile; fileRef = 4860A67A1D8555AE00B60113 /* NSArray+SortMethod.m */; };
+		6CE446F6E4D1F65063707F1D /* libPods-SortArray.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 05B17BD016F8B4BDAFEB0174 /* libPods-SortArray.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05B17BD016F8B4BDAFEB0174 /* libPods-SortArray.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SortArray.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4860A63D1D81CD0B00B60113 /* SortArray.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SortArray.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4860A6411D81CD0B00B60113 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		4860A6431D81CD0B00B60113 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,6 +56,10 @@
 		4860A6641D81CD0B00B60113 /* SortArrayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SortArrayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4860A6681D81CD0B00B60113 /* SortArrayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortArrayUITests.m; sourceTree = "<group>"; };
 		4860A66A1D81CD0B00B60113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4860A6791D8555AE00B60113 /* NSArray+SortMethod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+SortMethod.h"; sourceTree = "<group>"; };
+		4860A67A1D8555AE00B60113 /* NSArray+SortMethod.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SortMethod.m"; sourceTree = "<group>"; };
+		7440A51438DD15C2F7548B07 /* Pods-SortArray.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SortArray.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SortArray/Pods-SortArray.debug.xcconfig"; sourceTree = "<group>"; };
+		99DDABF26FF6401DFBFDD78F /* Pods-SortArray.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SortArray.release.xcconfig"; path = "Pods/Target Support Files/Pods-SortArray/Pods-SortArray.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CE446F6E4D1F65063707F1D /* libPods-SortArray.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +95,8 @@
 				4860A65C1D81CD0B00B60113 /* SortArrayTests */,
 				4860A6671D81CD0B00B60113 /* SortArrayUITests */,
 				4860A63E1D81CD0B00B60113 /* Products */,
+				A5530D08874C6307A69C4B60 /* Pods */,
+				73507E97B9EE5A84671B55DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +117,8 @@
 				4860A6441D81CD0B00B60113 /* AppDelegate.m */,
 				4860A6461D81CD0B00B60113 /* ViewController.h */,
 				4860A6471D81CD0B00B60113 /* ViewController.m */,
+				4860A6791D8555AE00B60113 /* NSArray+SortMethod.h */,
+				4860A67A1D8555AE00B60113 /* NSArray+SortMethod.m */,
 				4860A6491D81CD0B00B60113 /* Main.storyboard */,
 				4860A64F1D81CD0B00B60113 /* Assets.xcassets */,
 				4860A6511D81CD0B00B60113 /* LaunchScreen.storyboard */,
@@ -143,6 +155,23 @@
 			path = SortArrayUITests;
 			sourceTree = "<group>";
 		};
+		73507E97B9EE5A84671B55DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				05B17BD016F8B4BDAFEB0174 /* libPods-SortArray.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5530D08874C6307A69C4B60 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7440A51438DD15C2F7548B07 /* Pods-SortArray.debug.xcconfig */,
+				99DDABF26FF6401DFBFDD78F /* Pods-SortArray.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +179,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4860A66D1D81CD0B00B60113 /* Build configuration list for PBXNativeTarget "SortArray" */;
 			buildPhases = (
+				73399D5542B693A404D7A9AA /* [CP] Check Pods Manifest.lock */,
 				4860A6391D81CD0B00B60113 /* Sources */,
 				4860A63A1D81CD0B00B60113 /* Frameworks */,
 				4860A63B1D81CD0B00B60113 /* Resources */,
+				8B81CC4AA92C3A572C5C5F5E /* [CP] Embed Pods Frameworks */,
+				42D67B84161CC1DD88E5A8D5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,6 +303,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		42D67B84161CC1DD88E5A8D5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SortArray/Pods-SortArray-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		73399D5542B693A404D7A9AA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B81CC4AA92C3A572C5C5F5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SortArray/Pods-SortArray-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4860A6391D81CD0B00B60113 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -278,6 +358,7 @@
 			files = (
 				4860A6481D81CD0B00B60113 /* ViewController.m in Sources */,
 				4860A64E1D81CD0B00B60113 /* SortArray.xcdatamodeld in Sources */,
+				4860A67B1D8555AE00B60113 /* NSArray+SortMethod.m in Sources */,
 				4860A6451D81CD0B00B60113 /* AppDelegate.m in Sources */,
 				4860A6421D81CD0B00B60113 /* main.m in Sources */,
 			);
@@ -420,6 +501,7 @@
 		};
 		4860A66E1D81CD0B00B60113 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7440A51438DD15C2F7548B07 /* Pods-SortArray.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SortArray/Info.plist;
@@ -431,6 +513,7 @@
 		};
 		4860A66F1D81CD0B00B60113 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99DDABF26FF6401DFBFDD78F /* Pods-SortArray.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SortArray/Info.plist;
@@ -505,6 +588,7 @@
 				4860A66F1D81CD0B00B60113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4860A6701D81CD0B00B60113 /* Build configuration list for PBXNativeTarget "SortArrayTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +597,7 @@
 				4860A6721D81CD0B00B60113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4860A6731D81CD0B00B60113 /* Build configuration list for PBXNativeTarget "SortArrayUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +606,7 @@
 				4860A6751D81CD0B00B60113 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

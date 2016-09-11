@@ -1,0 +1,7 @@
+target 'SortArray' do
+
+platform :ios, '7.0'
+pod 'UITableView+FDTemplateLayoutCell', '~> 1.5.beta'
+pod 'Masonry', '~> 1.0.1'
+
+end
