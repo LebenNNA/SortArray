@@ -96,22 +96,18 @@
 // 插入排序（直接插入法）
 + (NSArray *)insertSortArray:(NSMutableArray<NSNumber *> *)array isDes:(BOOL)des {
     int index = 1;
-    for (int i = 0; i < array.count; i++) {
-        for (int j = 0; j < array.count - i - 1; j++) {
-            BOOL sortType = des ? (array[i].integerValue < array[j].integerValue) : (array[i].integerValue > array[j].integerValue);
-            if (sortType) {
-                NSNumber *tempNumber = array[j];
-                array[j] = array[j+1];
-                array[j+1] = tempNumber;
-            }
+    for (int i = 1; i < array.count; i ++) {
+        NSNumber *tempNumber = array[i];
+        for (int j = i - 1; j >= 0 && tempNumber < array[j]; j --) {
+            array[j + 1] = array[j];
+            array[j] = tempNumber;
             NSLog(@"第%d次：%@", index, array);
-            index++;
         }
         NSLog(@"第%d次：%@", index, array);
-        index++;
     }
     NSArray *tempArr = [NSArray arrayWithArray:array];
-    NSLog(@"快速排序结果：%@", tempArr);
+    tempArr = des ? [NSArray reverseArray:tempArr] : tempArr;
+    NSLog(@"插入排序结果：%@", tempArr);
     return tempArr;
 }
 
