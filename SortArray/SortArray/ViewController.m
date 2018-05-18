@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSArray+SortMethod.h"
 #import "Masonry.h"
+#import "objc/runtime.h"
 
 @interface ViewController () {
     NSMutableArray *_picsArr;
@@ -22,13 +23,17 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
-    NSMutableArray *array1 = [self buildArray:10];
+    // 数组排序
+//    NSMutableArray *array1 = [self buildArray:10];
 //    [NSArray popSortArray:array1 isDes:true];
 //    [NSArray selectSortArray:array1 isDes:false];
-    [NSArray quickSortArray:array1 isDes:false];
+//    [NSArray quickSortArray:array1 isDes:false];
 
 //    _picsArr = [NSMutableArray arrayWithCapacity:0];
+    
+    // 九宫格布局
 //    [self layouPage];
+    
 
 }
 

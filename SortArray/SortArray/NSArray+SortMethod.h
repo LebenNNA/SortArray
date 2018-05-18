@@ -19,4 +19,7 @@
 // 快速排序
 + (NSArray *)quickSortArray:(NSMutableArray<NSNumber *> *)array isDes:(BOOL)des;
 
+// 插入排序（直接插入法）
++ (NSArray *)insertSortArray:(NSMutableArray<NSNumber *> *)array isDes:(BOOL)des;
+
 @end

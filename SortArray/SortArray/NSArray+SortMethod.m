@@ -109,8 +109,8 @@
     tempArr = des ? [NSArray reverseArray:tempArr] : tempArr;
     NSLog(@"插入排序结果：%@", tempArr);
     return tempArr;
+    
 }
-
 
 // 反转数组
 + (NSArray *)reverseArray:(NSArray *)array {
